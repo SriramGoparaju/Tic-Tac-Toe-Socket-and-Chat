@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-tac-toe</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+<div class="container">
+      <div class="play-area">
+        <h3 class="points">
+          <%= player1 %> 
+            vs
+            <%= player2 %>
+        </h3>
+      
+        <div class="board" id="board">
+          <div class="cell" id="1" data-cell></div>
+          <div class="cell" id="2" data-cell></div>
+          <div class="cell" id="3" data-cell></div>
+          <div class="cell" id="4" data-cell></div>
+          <div class="cell" id="5" data-cell></div>
+          <div class="cell" id="6" data-cell></div>
+          <div class="cell" id="7" data-cell></div>
+          <div class="cell" id="8" data-cell></div>
+          <div class="cell" id="9" data-cell></div>
+        </div>
+      </div>
+      <div class="chat-area">
+        <div class="messages">
+          
+        </div>
+
+        <form id="chat-form" autocomplete="off" >
+          <input type="text" id="formInput" class="form-input" name="message-text" placeholder="Send message..."/>
+          <button type="submit" class="form-button">Send</button>
+        </form>
+      </div>
+</div>
+
+    
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/JS/dom.js"></script>
+  </body>
+</html>
