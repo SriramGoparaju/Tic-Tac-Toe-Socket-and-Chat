@@ -6,4 +6,5 @@ The first player has to create a room for both the players, then a code will be 
 
 ### Please use bigger screens
 
-The link to the site will be shared after the project is deployed
+You can find a demo of the project here : https://vast-thicket-30587.herokuapp.com/
+Try it with your friend or use a new tab to simulate another user
